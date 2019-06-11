@@ -1,0 +1,187 @@
+/*All Version*/
+body {
+	background-color: #eaeaea;
+}
+/*navbar*/
+
+.navbar {
+	color: black!important;
+	font-weight: 400;
+	position: relative;
+	z-index: 1;
+}
+.tombol{
+	border-radius: 40px;
+}
+.nav-link,.tombol{
+	margin-left: auto;
+	margin-right: auto;
+}
+.navbar-brand,.navbar-nav .tombol{
+	color: white!important;
+	}
+.navbar-brand,.navbar-nav a{
+	color: black!important;
+}
+.btn-outline-primary{
+	color: white!important;
+}
+.navbar-brand{
+	font-variant: small-caps;
+	letter-spacing: 5px;
+	font-weight: 200;
+}
+.navbar-brand span{
+	font-weight: 500;
+}
+
+
+/*Jumbotron*/
+.jumbotron {
+	height: 500px;
+	background-image: url(../img/jumbotron-bg.jpg);
+	background-size: cover;
+	background-position: 0 -100px ;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 100%!important;
+	color: white;
+	text-shadow: 1px 1px 8px rgba(0,0,0,0.8);
+	position: relative;
+	overflow: hidden;
+}
+.jumbotron .display-4{
+	font-weight: 300;
+	font-size: 60px;
+	margin-top: 50px;
+}
+.jumbotron .display-4 span{
+	font-weight: 500;
+	color: rgb(0,123,255);
+
+}
+.jumbotron .lead{
+	margin:30px 0 ;
+	font-weight: 200;
+	font-size: 1.1em;
+	margin-top: -10px;
+}
+.container{
+	position: relative;
+	z-index: 1;
+}
+.jumbotron::after{
+	content: "";	
+	height:70%;
+	margin-top: -70px;
+	display: block;
+	width: 100%;
+	position: absolute;
+	bottom:0;
+	background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+.jumbotron p {
+	margin-top: 50px!important;
+}
+/*pricing*/
+.pricing{
+	position: relative;
+	margin-top: 120px;
+	margin-left: 80px;
+}
+.pricing h3 span {
+	font-weight: 700;
+	font-size: 50px;
+
+}
+.card-text{
+	font-size: 0.8em;
+	opacity: .6;
+}
+.pricing h3 {
+	font-size: 0.9em;
+}
+.pricing h5 {
+	text-transform: uppercase;
+
+}
+.pricing h5 span {
+	color: rgb(0,123,255)
+}
+.populer::before{
+	content: "MOST POPULAR";
+	background-color:rgb(0,123,255);
+	color: white;
+	font-weight: 500;
+
+}
+.caption {
+	width: 15em;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+.caption  span {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.pos{
+	margin:50px 0;
+}
+
+/*footer*/
+footer{
+	margin-top: 50px;
+	text-align: center;
+}
+
+
+/*Desktop Version*/
+@media (min-width: 992px) {
+
+    .nav-link:hover::after{
+	content:" ";
+	border-bottom:2px solid #1E7DE7;
+	display: block;
+	width: 20px;
+	margin:auto;
+	padding-bottom: 5px;
+	margin-bottom: -7px;
+	}
+	.nav-link,.tombol{
+	text-transform: uppercase;
+	}
+	.nav-item{
+	margin-right: 30px!important;
+	}
+	.navbar-brand,.navbar-nav .tombol{
+	color: white!important;
+	}
+	.navbar {
+	color: white!important;
+	text-shadow: 1px 1px 8px rgba(0,0,0,0.8);
+	}
+	.navbar-brand,.navbar-nav a{
+		color: white!important;
+	}
+	.jumbotron {
+		margin-top: -60px;
+	}
+	.jumbotron .lead {
+		margin-bottom: 90px;
+		font-size: 1.5em;
+	}
+	.jumbotron .display-4{
+	font-size: 80px;
+	}
+	.pricing{
+	margin-left:0;
+	margin-bottom: 0;
+
+
+}
+	.pos{
+	margin-top: 0!important;
+	}
+
+}
+
